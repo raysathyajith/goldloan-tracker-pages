@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account & Data Deletion — DueGold: Gold Loan Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f8faff;
+    --fg: #0d1117;
+    --muted: #6b7a99;
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --primary: #1a56db;
+    --accent: #d97706;
+    --danger: #dc2626;
+    --danger-bg: #fef2f2;
+    --danger-border: #fecaca;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0f1a;
+      --fg: #f1f5f9;
+      --muted: #94a3b8;
+      --card: #151b28;
+      --border: #263143;
+      --primary: #3b82f6;
+      --accent: #f59e0b;
+      --danger: #f87171;
+      --danger-bg: #2a1414;
+      --danger-border: #5b2323;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  .eyebrow { color: var(--accent); font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 8px; }
+  h1 { font-size: 30px; font-weight: 700; margin: 0 0 6px; }
+  .updated { color: var(--muted); font-size: 13px; margin-bottom: 40px; }
+  h2 { font-size: 19px; font-weight: 600; margin: 40px 0 12px; }
+  p, li { color: var(--fg); font-size: 15px; }
+  ul, ol { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 8px; }
+  a { color: var(--primary); }
+  .steps {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 16px 0;
+  }
+  .steps h3 { margin: 0 0 10px; font-size: 15px; font-weight: 600; }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: rgba(26, 86, 219, 0.12);
+    color: var(--primary);
+    margin-bottom: 10px;
+  }
+  .danger-box {
+    background: var(--danger-bg);
+    border: 1px solid var(--danger-border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .danger-box strong { color: var(--danger); }
+  .contact {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .contact a { font-weight: 600; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align: center; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Gold Loan Manager</div>
+  <h1>Account &amp; Data Deletion</h1>
+  <div class="updated">Last updated: August 29, 2026</div>
+
+  <p>
+    You can permanently delete your DueGold account and all data associated with it at any time,
+    either directly in the app or by requesting it here. Deletion is permanent and cannot be undone.
+  </p>
+
+  <h2>Option 1 — Delete in the app (instant)</h2>
+  <div class="steps">
+    <span class="badge">Recommended</span>
+    <h3>Steps</h3>
+    <ol>
+      <li>Open DueGold and sign in.</li>
+      <li>Go to the <strong>Profile</strong> tab.</li>
+      <li>Scroll to the bottom and tap <strong>Delete Account</strong>.</li>
+      <li>Confirm when prompted.</li>
+    </ol>
+    <p style="margin-bottom:0; color: var(--muted); font-size: 13px;">
+      Your account and all data are deleted immediately — no waiting period.
+    </p>
+  </div>
+
+  <h2>Option 2 — Request deletion by email</h2>
+  <p>
+    If you no longer have the app installed or can't sign in, email us from the address associated
+    with your account and we'll delete it for you.
+  </p>
+  <div class="steps">
+    <h3>What to include</h3>
+    <ul>
+      <li>Send from the same email address you used to sign in to DueGold.</li>
+      <li>Subject line: <strong>"Delete my DueGold account"</strong>.</li>
+    </ul>
+    <p style="margin-bottom:0;">
+      We process email requests within <strong>7 days</strong> and will confirm once your data has
+      been deleted.
+    </p>
+  </div>
+
+  <h2>What gets deleted</h2>
+  <table>
+    <tr><th>Data</th><th>Deleted?</th></tr>
+    <tr><td>Account &amp; sign-in details</td><td>Yes — permanently</td></tr>
+    <tr><td>Loan records (amounts, dates, banks, notes)</td><td>Yes — permanently</td></tr>
+    <tr><td>Payment history</td><td>Yes — permanently</td></tr>
+    <tr><td>Jewel details &amp; photos</td><td>Yes — permanently</td></tr>
+    <tr><td>Purchase/unlock status</td><td>Yes — permanently</td></tr>
+  </table>
+
+  <div class="danger-box">
+    <strong>This action cannot be undone.</strong> Once deleted, your loans, payment history, and
+    jewel photos cannot be recovered — including by us. If you just want to stop using the app
+    without losing your data, simply sign out instead of deleting your account.
+  </div>
+
+  <p>
+    See our <a href="./privacy-policy.html">Privacy Policy</a> for more on what we collect and why.
+  </p>
+
+  <div class="contact">
+    <div style="margin-bottom:6px; color: var(--muted); font-size: 13px;">Need help with a deletion request?</div>
+    <a href="mailto:sathyajithray.n@gmail.com">sathyajithray.n@gmail.com</a>
+  </div>
+
+  <footer>DueGold: Gold Loan Tracker</footer>
+</div>
+</body>
+</html>

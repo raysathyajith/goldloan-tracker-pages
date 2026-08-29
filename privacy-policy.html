@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — DueGold: Gold Loan Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f8faff;
+    --fg: #0d1117;
+    --muted: #6b7a99;
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --primary: #1a56db;
+    --accent: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0f1a;
+      --fg: #f1f5f9;
+      --muted: #94a3b8;
+      --card: #151b28;
+      --border: #263143;
+      --primary: #3b82f6;
+      --accent: #f59e0b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  .eyebrow { color: var(--accent); font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 8px; }
+  h1 { font-size: 30px; font-weight: 700; margin: 0 0 6px; }
+  .updated { color: var(--muted); font-size: 13px; margin-bottom: 40px; }
+  h2 { font-size: 19px; font-weight: 600; margin: 40px 0 12px; }
+  p, li { color: var(--fg); font-size: 15px; }
+  ul { padding-left: 22px; margin: 10px 0; }
+  li { margin-bottom: 6px; }
+  a { color: var(--primary); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 20px 0;
+  }
+  .contact {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 48px;
+    text-align: center;
+  }
+  .contact a { font-weight: 600; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Gold Loan Manager</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: August 29, 2026</div>
+
+  <p>
+    DueGold: Gold Loan Tracker ("DueGold", "the app", "we") is a personal finance app that helps you
+    track gold loans you've taken from banks or lenders — amounts, repayment progress, due dates, and
+    details about the jewellery pledged as collateral. This page explains what information the app
+    collects, how it's used, and how you can access or delete it.
+  </p>
+  <p>
+    DueGold does not lend money, broker loans, or connect you with any lender. It is purely a
+    personal record-keeping tool for loans you already hold elsewhere.
+  </p>
+
+  <h2>Information we collect</h2>
+  <ul>
+    <li><strong>Account information</strong> — your email address, via Google Sign-In or another sign-in method offered in the app.</li>
+    <li><strong>Loan information you enter</strong> — loan names, bank/lender names, amounts, interest rates, pledge and due dates, repayment history, and any notes you add.</li>
+    <li><strong>Jewellery details</strong> — descriptions, weights, and photos of pledged items, if you choose to add them. Photos are stored privately and are never visible to anyone but you.</li>
+    <li><strong>Purchase status</strong> — whether you've bought the app's one-time "unlimited loans" unlock. Payment itself is handled entirely by Google Play (or Apple, on iOS) — DueGold never sees or stores your card details.</li>
+    <li><strong>Diagnostic information</strong> — a small technical log kept only on your device, used solely to help fix bugs if you choose to share it with support. It is not collected automatically or sent anywhere on its own.</li>
+  </ul>
+
+  <h2>How we use your information</h2>
+  <p>
+    Everything you enter is used only to provide the app's own features: tracking your loans, calculating
+    progress and interest, sending due-date reminders, and remembering your purchase/unlock status.
+  </p>
+  <p><strong>We do not sell your data, share it with advertisers, or use it for any purpose other than
+    running the app.</strong> There are no ads and no analytics/tracking SDKs in this app.</p>
+
+  <h2>Third-party services we rely on</h2>
+  <ul>
+    <li><strong>Supabase</strong> — our backend provider, which hosts the database, authentication, and private file storage your data lives in. Supabase processes this data on our behalf under their own security practices.</li>
+    <li><strong>Google Sign-In</strong> — used only to authenticate you; we receive your email address, nothing else.</li>
+    <li><strong>Google Play Billing</strong> (or Apple's App Store, on iOS) — processes the one-time in-app purchase. Payment card details never pass through DueGold's own systems.</li>
+  </ul>
+
+  <h2>How your data is protected</h2>
+  <p>
+    Every loan, payment, and jewel record is scoped to your account alone using database-level row
+    security — no other user's app can read or modify your data, and DueGold has no admin dashboard
+    that displays user data either. Jewel photos are kept in a private storage bucket, never publicly
+    accessible.
+  </p>
+
+  <h2>Your rights, and how to delete your data</h2>
+  <p>You can access, correct, or delete everything you've entered at any time:</p>
+  <div class="card">
+    <p style="margin:0 0 8px;"><strong>In the app:</strong> open the <strong>Profile</strong> tab → scroll to the bottom → <strong>Delete Account</strong>. This immediately and permanently deletes your account, every loan, payment, and jewel photo — there is no waiting period and no need to contact anyone.</p>
+    <p style="margin:0;"><strong>Without the app:</strong> see our <a href="./delete-account.html">Account &amp; Data Deletion</a> page for how to request deletion by email instead.</p>
+  </div>
+  <p>Deleted data is removed permanently and cannot be recovered.</p>
+
+  <h2>Data retention</h2>
+  <p>
+    We keep your data for as long as your account exists, so the app can function. If you delete your
+    account, everything tied to it — loan records, payment history, and jewel photos — is deleted
+    permanently, without a grace period.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>
+    DueGold is not directed at children under 13, and we do not knowingly collect information from
+    children. If you believe a child has provided us with personal information, contact us and we'll
+    delete it.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    We may update this policy occasionally as the app changes. The "Last updated" date at the top of
+    this page will reflect the most recent revision.
+  </p>
+
+  <div class="contact">
+    <div style="margin-bottom:6px; color: var(--muted); font-size: 13px;">Questions about this policy or your data?</div>
+    <a href="mailto:sathyajithray.n@gmail.com">sathyajithray.n@gmail.com</a>
+  </div>
+
+  <footer>DueGold: Gold Loan Tracker</footer>
+</div>
+</body>
+</html>
