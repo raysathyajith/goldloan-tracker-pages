@@ -67,10 +67,10 @@
 <div class="wrap">
   <div class="eyebrow">Gold Loan Manager</div>
   <h1>Privacy Policy</h1>
-  <div class="updated">Last updated: August 29, 2026</div>
+  <div class="updated">Last updated: October 17, 2026</div>
 
   <p>
-    DueGold: Gold Loan Tracker ("DueGold", "the app", "we") is a personal finance app that helps you
+    DueGold: Gold Loan Tracker ("DueGold", "the app", "we"), developed by Sathyajithray Namadevan, is a personal finance app that helps you
     track gold loans you've taken from banks or lenders — amounts, repayment progress, due dates, and
     details about the jewellery pledged as collateral. This page explains what information the app
     collects, how it's used, and how you can access or delete it.
@@ -82,17 +82,19 @@
 
   <h2>Information we collect</h2>
   <ul>
-    <li><strong>Account information</strong> — your email address, via Google Sign-In or another sign-in method offered in the app.</li>
+    <li><strong>Account information</strong> — your email address, via Google Sign-In or email/password sign-in. If Google provides a display name or profile picture, the app may show it in your profile; your name can also label an account you share.</li>
     <li><strong>Loan information you enter</strong> — loan names, bank/lender names, amounts, interest rates, pledge and due dates, repayment history, and any notes you add.</li>
-    <li><strong>Jewellery details</strong> — descriptions, weights, and photos of pledged items, if you choose to add them. Photos are stored privately and are never visible to anyone but you.</li>
-    <li><strong>Purchase status</strong> — whether you've bought the app's one-time "unlimited loans" unlock. Payment itself is handled entirely by Google Play (or Apple, on iOS) — DueGold never sees or stores your card details.</li>
-    <li><strong>Diagnostic information</strong> — a small technical log kept only on your device, used solely to help fix bugs if you choose to share it with support. It is not collected automatically or sent anywhere on its own.</li>
+    <li><strong>Jewellery details</strong> — descriptions, weights, quantities, and photos of pledged items, if you choose to add them. The photos you select or take are uploaded to private storage for your account.</li>
+    <li><strong>Sharing information</strong> — if you invite someone to a shared account, we store their sign-in email and your account email and display name. Invited users can view and change the loans, payments, jewellery details, and photos in that account until access is removed.</li>
+    <li><strong>Purchase status</strong> — whether you've bought the app's one-time "unlimited loans" unlock, together with a store purchase token used to verify and restore it. Android payment is handled by Google Play; DueGold does not receive your payment card details.</li>
+    <li><strong>On-device information</strong> — unfinished loan drafts, settings, and a small technical log may be stored on your device. The log is not sent to us automatically; you can choose to share it with support.</li>
   </ul>
 
   <h2>How we use your information</h2>
   <p>
     Everything you enter is used only to provide the app's own features: tracking your loans, calculating
-    progress and interest, sending due-date reminders, and remembering your purchase/unlock status.
+    progress and interest, sending due-date reminders, sharing an account when you invite someone,
+    and verifying your purchase/unlock status. Reminders are scheduled on your device.
   </p>
   <p><strong>We do not sell your data, share it with advertisers, or use it for any purpose other than
     running the app.</strong> There are no ads and no analytics/tracking SDKs in this app.</p>
@@ -100,31 +102,40 @@
   <h2>Third-party services we rely on</h2>
   <ul>
     <li><strong>Supabase</strong> — our backend provider, which hosts the database, authentication, and private file storage your data lives in. Supabase processes this data on our behalf under their own security practices.</li>
-    <li><strong>Google Sign-In</strong> — used only to authenticate you; we receive your email address, nothing else.</li>
-    <li><strong>Google Play Billing</strong> (or Apple's App Store, on iOS) — processes the one-time in-app purchase. Payment card details never pass through DueGold's own systems.</li>
+    <li><strong>Google Sign-In</strong> — used to authenticate you; Google may also provide your display name and profile picture.</li>
+    <li><strong>Google Play Billing</strong> — processes the one-time in-app purchase on Android. Payment card details never pass through DueGold's own systems.</li>
   </ul>
 
   <h2>How your data is protected</h2>
   <p>
-    Every loan, payment, and jewel record is scoped to your account alone using database-level row
-    security — no other user's app can read or modify your data, and DueGold has no admin dashboard
-    that displays user data either. Jewel photos are kept in a private storage bucket, never publicly
-    accessible.
+    Database-level row security limits loan, payment, and jewel access to you and people you explicitly
+    invite to your shared account. Jewel photos are kept in a private storage bucket and accessed through
+    time-limited links. Removing a collaborator stops new access, but a photo link already issued to them
+    may remain usable until it expires, for up to seven days.
+  </p>
+
+  <h2>Optional device access</h2>
+  <p>
+    You can select multiple individual photos through your device's photo picker without giving DueGold
+    access to your whole photo library. Camera access is requested only if you choose to take a photo.
+    Notification permission is requested for loan reminders. You can disable reminders in the app or
+    device settings. The app does not request contacts or device location.
   </p>
 
   <h2>Your rights, and how to delete your data</h2>
   <p>You can access, correct, or delete everything you've entered at any time:</p>
   <div class="card">
-    <p style="margin:0 0 8px;"><strong>In the app:</strong> open the <strong>Profile</strong> tab → scroll to the bottom → <strong>Delete Account</strong>. This immediately and permanently deletes your account, every loan, payment, and jewel photo — there is no waiting period and no need to contact anyone.</p>
+    <p style="margin:0 0 8px;"><strong>In the app:</strong> open the <strong>Profile</strong> tab → scroll to the bottom → <strong>Delete Account</strong>. This removes your account, its records, and associated jewel photos from the active service. It does not delete another person's account if you were a collaborator.</p>
     <p style="margin:0;"><strong>Without the app:</strong> see our <a href="./delete-account.html">Account &amp; Data Deletion</a> page for how to request deletion by email instead.</p>
   </div>
-  <p>Deleted data is removed permanently and cannot be recovered.</p>
+  <p>Deleting your account is irreversible in the app. Copies you previously exported or shared are outside the app and must be removed where you saved them.</p>
 
   <h2>Data retention</h2>
   <p>
-    We keep your data for as long as your account exists, so the app can function. If you delete your
-    account, everything tied to it — loan records, payment history, and jewel photos — is deleted
-    permanently, without a grace period.
+    We keep your account data while your account exists. When you delete the account, we remove its
+    records and associated jewel photos from the active database and storage. Service-provider backups
+    may be retained temporarily under the provider's backup schedule. Information you exported or
+    shared, including copies on another person's device, is not deleted by this action.
   </p>
 
   <h2>Children's privacy</h2>
@@ -149,3 +160,4 @@
 </div>
 </body>
 </html>
+
